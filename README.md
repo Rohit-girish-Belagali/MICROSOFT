@@ -3,6 +3,8 @@
 Entry for **Embedded SF: CraftifAI Physical AI Hackathon** (HackwithBangalore 4.0), **Track B — FirmGen**, bonus: **Live Intelligence**.
 Event: https://luma.com/5z8w42mq
 
+**Live dashboard:** https://airsentinel-one.vercel.app (open in Chrome; click *Simulate* for a no-hardware preview, or *Connect via BLE* with the board)
+
 ## What it is
 An ESP32 node that senses temperature/humidity every second, classifies the room as OK / WARN / ALARM / FAULT with debounce and hysteresis, shows it on traffic-light LEDs, sounds a buzzer in ALARM (button or BLE acknowledge), and streams an 8-byte packet over BLE to a browser dashboard.
 
@@ -16,7 +18,7 @@ An ESP32 node that senses temperature/humidity every second, classifies the room
 | `docs/EVIDENCE_CHECKLIST.md` | Screenshots/captures to collect. |
 | `firmware/` | **Created by FirmGen** (push via its Git view). Not hand-written. |
 
-## Run the dashboard
+## Run the dashboard locally
 ```bash
 cd dashboard && python3 -m http.server 8000
 # open http://localhost:8000 in Chrome
